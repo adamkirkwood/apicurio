@@ -2,5 +2,22 @@
     "swagger": "2.0",
     "info": {
         "title": "Food"
+    },
+    "paths": {
+        "/foods": {
+            "get": {
+                "description": "Get food",
+                "responses": {
+                    "200": {
+                        "schema": {
+                            "$ref": "#/definitions/Food"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Food": {}
     }
 }
